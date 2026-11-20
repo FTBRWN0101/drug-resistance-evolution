@@ -1,0 +1,26 @@
+[project]
+name = "drug-resistance-evolution"
+version = "1.0.0"
+description = "Evolutionary simulation of drug resistance in head and neck cancer cells on fitness landscapes derived from b-AP15 and TRAIL signalling."
+readme = "README.md"
+authors = [{ name = "Findlay Brown" }]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.9",
+    "numpy>=1.24",
+    "scipy>=1.10",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Code is kept as submitted, so this file keeps its original import order.
+"research/simulation/fitness.py" = ["I001"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "pytest-randomly>=5.1.0",
+    "ruff>=0.17.6",
+]

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Evolutionary dynamics of drug resistance on a signalling fitness landscape"
+abstract: "An evolutionary simulation of head and neck cancer cells under five drug treatments, testing whether combination therapy prevents resistance by reshaping the fitness landscape."
+authors:
+  - family-names: Brown
+    given-names: Findlay
+license: Apache-2.0
+repository-code: "https://github.com/FTBRWN0101/drug-resistance-evolution"
